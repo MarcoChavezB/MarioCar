@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #4c4c4c;
+}
+
+h1{
+display: flex;
+justify-content: center;
+}
+
+.grid-container{
+    position: relative;
+    display: grid;
+    grid-template-rows: 2fr;
+}
+
+.grid-container div:first-child{
+height: 50vh;
+
+}
+
+#montanas{
+    background-image: url(img/fondo2.jpeg);
+    position: relative;
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 56em;
+    bottom: 29em;
+    animation: desplazamiento 50s linear infinite;
+    background-size: cover;
+
+}
+
+#linea{
+    background-image: url(img/linea.png);
+    position: relative;
+    background-repeat: repeat-x;
+    bottom: 32px;
+    width: 100%;
+    animation: desplazamiento 50s linear infinite;
+}
+
+@keyframes desplazamiento {
+0% {
+    background-position: 0 0;
+}
+100% {
+    background-position: -20000px 0;
+}
+}
+
+
+
+.grid-container div:nth-child(2){
+height: 40vh;
+background-repeat: no-repeat;
+background-color: #4c4c4c;
+}
+
