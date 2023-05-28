@@ -6,10 +6,6 @@ body{
     background-color: #4c4c4c;
 }
 
-h1{
-display: flex;
-justify-content: center;
-}
 
 .grid-container{
     position: relative;
@@ -18,7 +14,7 @@ justify-content: center;
 }
 
 .grid-container div:first-child{
-height: 50vh;
+    height: 50vh;
 
 }
 
@@ -42,6 +38,75 @@ height: 50vh;
     width: 100%;
     animation: desplazamiento 50s linear infinite;
 }
+
+.carros #carro1{
+    position: relative;
+    left: -230px;
+    bottom: 40px;
+    background: transparent;
+    background-image: url(img/ca574ef70d5f855.png);
+    background-repeat: no-repeat;
+    animation: movimiento2 30s linear infinite;
+    background-size: contain;
+    background-size: 200px;
+    width: 200%;
+}
+
+.carros #carro2{
+    animation: movimiento1 50s linear infinite;
+    position: relative;
+    bottom: 230px;
+    background: transparent;
+    background-image: url(img/hongo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 170px;
+    width: 100%;
+    
+}
+
+
+#mario{
+    position: relative;
+    background-image: url(img/mario.png);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    width: 100%;
+    top: 500px;  
+    animation: rotacion 50s linear infinite;
+
+}
+
+@keyframes rotacion{
+    0%{
+        background-position: 0 0;
+        
+    }
+    100%{
+        background-position: 20000px 0px;
+    }
+}
+
+
+@keyframes movimiento1{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 2000px 0px;
+    }
+}
+
+@keyframes movimiento2{
+    0%{
+        background-position: 0 0;
+    }
+    
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
 
 @keyframes desplazamiento {
 0% {
